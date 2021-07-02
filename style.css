@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+/*font-family: 'Dancing Script', cursive;*/
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+.backimg{
+    width: 100%;
+    height: 100%;
+    background-image: url('img/backimg.gif');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cont{
+    position: relative;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont .cards {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#2196f3, #2196f3 30%,#1d3548 30%,#1d3548);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cont .cards .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 100000;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-origin: top;
+}
+
+.cont .cards:hover .imgBx{
+    transform: translateY(30px) scale(0.5);
+}
+
+.cont .cards .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont .cards .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+.cont .cards:hover .content{
+    transform: translateY(0);
+}
+
+.cont .cards .content .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cont .cards .content .details h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.cont .cards .content .details h3 span{
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #03a9f4;
+}
+
+.social_icons{
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+}
+.social_icons li{
+    list-style: none;
+    margin: 4px;
+}
+
+.social_icons li a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #294d69;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social_icons li a:hover{
+    transform: rotate(360deg);
+    background: #03a9f4;
+}
