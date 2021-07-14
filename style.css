@@ -9,6 +9,12 @@
     font-family: 'Dancing Script', cursive;
 }
 
+@media only screen and (max-width:500px){
+    .backimg .cards .cont .content .details{
+        width: 100%;
+    }
+}
+    
 .backimg{
     width: 100%;
     height: 100%;
