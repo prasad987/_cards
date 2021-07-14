@@ -10,7 +10,7 @@
 }
 
 @media only screen and (max-width:500px){
-    .backimg .cards .cont .content .details{
+    .backimg {
         width: 100%;
     }
 }
